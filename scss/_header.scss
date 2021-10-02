@@ -12,6 +12,7 @@
 	&__details {
 		margin-top: 8rem;
 		flex-basis: 47%;
+		animation: moveInFromLeft 2s ease-out 1 backwards;
 
 		@include respond(phone) {
 			margin-top: 4rem;
@@ -34,6 +35,7 @@
 		height: 60rem;
 		border-radius: 1rem;
 		overflow: hidden;
+		animation: moveInFromRight 2s ease-out 2s 1 backwards;
 
 		@include respond(phone) {
 			order: -1;
