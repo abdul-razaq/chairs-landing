@@ -1,6 +1,17 @@
-// .btn {
-  
-//   &--primary {
+.btn {
+	padding: 1rem 3rem;
+	color: var(--color-white);
+	text-transform: uppercase;
+	border-radius: 5rem;
+	cursor: pointer;
+	font-family: inherit;
 
-//   }
-// }
+	&--primary {
+		background-color: var(--primary-color);
+    transition: all .2s ease-out;
+
+		&:hover {
+			background-color: var(--secondary-color);
+		}
+	}
+}
