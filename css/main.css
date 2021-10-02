@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  box-sizing: inherit; }
+
+:root {
+  --root-font-family: 'Yaldevi', sans-serif;
+  --root-font-size: 1.8rem;
+  --root-body-color: #f4f4f4;
+  --root-text-color: #444;
+  --color-white: #fff;
+  --primary-color: #075546; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
+
+body {
+  background-color: var(--root-body-color);
+  box-sizing: border-box;
+  color: var(--root-text-color);
+  line-height: 1.7;
+  font-size: var(--root-font-size); }

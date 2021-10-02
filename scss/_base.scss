@@ -1,0 +1,48 @@
+@import 'mixins';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	list-style-type: none;
+	box-sizing: inherit;
+}
+
+:root {
+	--root-font-family: 'Yaldevi', sans-serif;
+	--root-font-size: 1.8rem;
+	--root-body-color: #f4f4f4;
+	--root-text-color: #444;
+	--color-white: #fff;
+
+	--primary-color: #075546;
+}
+
+html {
+	font-size: 62.5%;
+	@include respond(big-screen) {
+		font-size: 75%;
+	}
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+	@include respond(phone) {
+		font-size: 43.75%;
+	}
+}
+
+body {
+	background-color: var(--root-body-color);
+	box-sizing: border-box;
+	color: var(--root-text-color);
+	line-height: 1.7;
+	font-size: var(--root-font-size);
+}
