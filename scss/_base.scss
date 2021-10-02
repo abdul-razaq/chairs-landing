@@ -15,7 +15,7 @@
 
 :root {
 	--root-font-family: 'Yaldevi', sans-serif;
-	--root-font-size: 1.6rem;
+	--root-font-size: 1.8rem;
 	--root-body-color: #f4f4f4;
 	--root-text-color: #444;
 	--color-white: #fff;
@@ -23,11 +23,11 @@
 	--primary-color: #0a7460;
 	--secondary-color: #0b846d;
 
-  --font-weight-semi-light: 300;
-  --font-weight-light: 400;
-  --font-weight-semi-bold: 500;
-  --font-weight-bold: 600;
-  --font-weight-very-bold: 700;
+	--font-weight-semi-light: 300;
+	--font-weight-light: 400;
+	--font-weight-semi-bold: 500;
+	--font-weight-bold: 600;
+	--font-weight-very-bold: 700;
 }
 
 html {
@@ -47,10 +47,15 @@ html {
 }
 
 body {
-  font-family: var(--root-font-family);
+	font-family: var(--root-font-family);
 	background-color: var(--root-body-color);
 	box-sizing: border-box;
 	color: var(--root-text-color);
-	line-height: 1.7;
+	line-height: 1.9;
 	font-size: var(--root-font-size);
+	padding: 5rem 10rem;
+
+	@include respond(phone) {
+		padding: 4rem;
+	}
 }

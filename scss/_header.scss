@@ -1,13 +1,48 @@
+@import 'mixins';
+
 .header {
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
 
-  &__details {
-    
-    & > h1 {
+	@include respond(phone) {
+		flex-direction: column;
+	}
 
-    }
+	&__details {
+		margin-top: 8rem;
+		flex-basis: 47%;
 
-    & > p {
+		@include respond(phone) {
+			margin-top: 4rem;
+		}
 
-    }
-  }
+		& > h1 {
+			margin-bottom: 3rem;
+			font-size: 4.5rem;
+			line-height: 1.3;
+		}
+
+		& > p {
+			font-size: 2.5rem;
+			margin-bottom: 4rem;
+		}
+	}
+
+	&__image {
+		flex-basis: 47%;
+		height: 60rem;
+		border-radius: 1rem;
+		overflow: hidden;
+
+		@include respond(phone) {
+			order: -1;
+		}
+
+		& > img {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
 }
