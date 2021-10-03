@@ -3,4 +3,6 @@
 @import 'components';
 @import 'base';
 
-@import 'header';
+@import './sections/header';
+@import './sections/features';
+@import './sections/testimonial';

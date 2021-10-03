@@ -1,0 +1,54 @@
+@import '../mixins';
+
+.features {
+	margin-top: 10rem;
+
+	& > h2 {
+		font-size: 4rem;
+		line-height: 1.3;
+		text-align: center;
+	}
+
+	&__container {
+		margin-top: 6rem;
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include respond(phone) {
+			flex-wrap: wrap;
+			text-align: center;
+		}
+
+		& > *:not(:last-child) {
+			margin-right: 10rem;
+
+			@include respond(phone) {
+				margin-right: 0;
+				margin-bottom: 4rem;
+			}
+		}
+	}
+
+	.feature {
+		& > *:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+
+		& > span {
+			font-size: 3rem;
+			color: var(--primary-color);
+		}
+
+		& > h3 {
+      font-size: 3rem;
+		}
+
+		& > p {
+			@include respond(phone) {
+				font-size: 2.3rem;
+			}
+		}
+	}
+}
