@@ -66,8 +66,8 @@
 				</div>
 			</div>
 		</section>
-		
-		<section class="testimonial">
+
+		<section class="testimonial moveInFromBottom">
 			<div class="testimonial__image">
 				<img src="./assets/images/img-1.jpg" alt="customers image" />
 			</div>
@@ -79,8 +79,22 @@
 					cupiditate unde, officia doloribus necessitatibus eligendi quasi totam
 					error aspernatur excepturi dolore. Alias, impedit.
 				</p>
-				<p>&mdash;Mary and Sarah Johnson</p>
+				<p>&mdash; Mary and Sarah Johnson</p>
 			</div>
 		</section>
+		
+		<script defer>
+			const observer = new window.IntersectionObserver(entries => {
+				for (entry of entries) {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('moveInFromBottom');
+					} else {
+						entry.target.classList.remove('moveInFromBottom');
+					}
+				}
+			});
+
+			observer.observe(document.querySelector('.testimonial'));
+		</script>
 	</body>
 </html>
