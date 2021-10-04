@@ -5,7 +5,7 @@
 	display: flex;
 	justify-content: space-between;
 
-	@include respond(phone) {
+	@include respond(tab-port) {
 		flex-direction: column;
 	}
 
@@ -14,7 +14,7 @@
 		flex-basis: 47%;
 		animation: moveInFromLeft 2s ease-out 1 backwards;
 
-		@include respond(phone) {
+		@include respond(tab-port) {
 			margin-top: 4rem;
 		}
 
@@ -23,7 +23,7 @@
 			font-size: 4.5rem;
 			line-height: 1.3;
 
-			@include respond(phone) {
+			@include respond(tab-port) {
 				font-size: 4rem;
 			}
 		}
@@ -41,7 +41,7 @@
 		overflow: hidden;
 		animation: moveInFromRight 2s ease-out 2s 1 backwards;
 
-		@include respond(phone) {
+		@include respond(tab-port) {
 			order: -1;
 		}
 

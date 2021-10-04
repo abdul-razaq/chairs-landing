@@ -8,7 +8,7 @@
 	border-radius: 1rem;
 	color: var(--color-white);
 
-	@include respond(phone) {
+	@include respond(tab-port) {
 		flex-direction: column;
 	}
 
@@ -19,7 +19,7 @@
 		overflow: hidden;
 		margin-right: 10rem;
 
-		@include respond(phone) {
+		@include respond(tab-port) {
 			flex-basis: 100%;
 			margin-right: 0;
 			align-items: center;
@@ -43,7 +43,7 @@
 		& > p {
 			margin-bottom: 2rem;
 
-			@include respond(phone) {
+			@include respond(tab-port) {
 				font-size: 2rem;
 			}
 		}
@@ -51,7 +51,7 @@
 		& p:last-of-type {
 			font-size: 1.5rem;
 
-			@include respond(phone) {
+			@include respond(tab-port) {
 				font-size: 1.8rem;
 			}
 		}

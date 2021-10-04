@@ -1,0 +1,39 @@
+@import '../mixins';
+
+.bestselling {
+  margin-top: 10rem;
+
+	.cards {
+    margin-top: 6rem;
+		max-width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include respond(tab-port) {
+      flex-direction: column;
+
+			& > *:not(:last-child) {
+				margin-bottom: 5rem;
+			}
+		}
+	}
+
+	& > h3 {
+    text-align: center;
+    font-size: 4rem;
+	}
+
+	&__card {
+		transition: transform 0.2s ease-out;
+
+		&:hover {
+			transform: translateY(-4rem);
+			cursor: pointer;
+
+			@include respond(tab-port) {
+				transform: translateY(-2rem);
+			}
+		}
+	}
+}

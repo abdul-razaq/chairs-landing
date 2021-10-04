@@ -20,3 +20,64 @@
 		}
 	}
 }
+
+.card {
+	width: 34.8rem;
+	background-color: var(--color-white);
+	border-radius: 2rem;
+	box-shadow: var(--box-shadow-light-secondary);
+	overflow: hidden;
+
+	&__header {
+		height: 25rem;
+		width: 100%;
+	}
+
+	&__image {
+		height: 100%;
+		width: 100%;
+		display: block;
+	}
+
+	&__body {
+		padding: 0 4rem;
+
+		& > h4 {
+			margin-top: 2.5rem;
+		}
+
+		& > ul {
+			margin-top: 1rem;
+			& > li {
+				&:not(:last-child) {
+					margin-bottom: 1rem;
+				}
+
+				& span:first-of-type {
+					margin-right: 1.5rem;
+					color: var(--primary-color);
+				}
+
+				& span:last-of-type {
+				}
+			}
+		}
+	}
+
+	&__footer {
+		padding: 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		& > span {
+			font-size: 2rem;
+			font-weight: var(--font-weight-bold);
+		}
+
+		& > a {
+			font-size: 1.4rem;
+			padding: 0.5rem 2rem;
+		}
+	}
+}
