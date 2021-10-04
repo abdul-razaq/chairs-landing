@@ -44,7 +44,7 @@
 
 		@include respond(tab-port) {
 			order: -1;
-			animation-delay: 0;
+			animation-delay: 0s;
 		}
 
 		& > img {
